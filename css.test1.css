@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Faculty Glyphic', cursive;
+    background-color: #; /* Ljusröd/rosa bakgrund */
+    color: #333;
+    padding: 30px 40px; /* Korrigera padding här */
+}
+#skills-education {
+    background-color: #ffdcf8; /* Samma bakgrund som övriga sektioner */
+    padding: 20px 0px; /* Utrymme runt sektionen */
+    display: flex;
+    flex-direction: column; /* Styla som kolumn */
+    align-items: center; /* Centrera innehållet */
+}
+
+.skills-education-container {
+    display: flex; /* Använd flexbox för att placera skills och education bredvid varandra */
+    justify-content: space-between; /* Dela utrymmet mellan dem */
+    max-width: 800px; /* Maxbredd för att hålla det kompakt */
+    width: 100%; /* Full bredd */
+}
+
+.skills, .education, .experiences {
+    flex: 1; /* Låt varje del ta upp lika mycket utrymme */
+    padding: 20px; /* Utrymme inuti varje del */
+    margin: 10px; /* Marginal mellan delarna */
+    background-color: white; /* Vit bakgrund för att skapa kontrast */
+    border-radius: 8px; /* Rundade hörn */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Liten skugga för djup */
+}
+
+
+section {
+    display: flex; /* Flexbox aktiveras */
+    flex-direction: column; /* Gör sektionen vertikal */
+    align-items: center; /* Centrera horisontellt */
+    justify-content: center; /* Centrera vertikalt */
+    text-align: center; /* Detta säkerställer att rubriker är centrerade */
+}
+
+/* Specifika regler för h2, h3 etc. */
+section h2, section h3 {
+    margin: 0; /* Ta bort default marginaler */
+    font-family: 'Faculty Glyphic', cursive; /* För rubriker */
+}
+
+section p {
+    margin: 20px 0; /* Avstånd runt textparagrafer */
+    line-height: 1.6; /* Radavstånd */
+    color: #555; /* Lite ljusare färg för brödtexten */
+}
+
+/* Header-styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%; /* Här kan du justera padding om så önskas */
+    background-color: #043f2c; /* Rosa header */
+}
+
+header .logo {
+    font-size: 1.8em;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #529e5a;
+    margin: 0 15px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav a:hover,
+header nav a.active {
+    background-color: #46ac66; /* Mörkare nyans vid hover */
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Lägg till skugga för "lyseffekt" */
+}
+
+/* Sektion - Hem */
+.home {
+    display: flex;
+    flex-direction: column; /* Gör så att bild och text ligger i kolumn */
+    align-items: center; /* Centrera elementen horisontellt */
+    justify-content: space-between;
+    padding: 50px; /* Ge sektionen lite padding på kanterna */
+}
+
+.home-img {
+    flex: 1;
+    max-width: 50%;
+    margin-bottom: 10px; /* Avstånd mellan bilden och texten */
+}
+
+.home-img img {
+    width: 500px; /* Justera storleken på bilden här */
+    height: auto; /* Bevara proportioner */
+    border-radius: 30px; /* Runda hörn för bilden */
+}
+
+.home-content {
+    flex: 1;
+    max-width: 600px; /* Maximal bredd på textinnehållet */
+    margin: 0 auto; /* Detta centrerar sektionen horisontellt */
+    padding: 0; /* Behåll padding om så önskas */
+    text-align: center; /* Centrera textinnehållet horisontellt */
+}
+
+.home-content h1 span {
+    color: #007600; /* Grön för sprallig kontrast */
+}
+
+/* Specifika regler för 'Hi, It's Ida' texten */
+.home-content h1 {
+    font-size: 3rem; /* Större rubrik */
+}
+
+.home-content h3 {
+    font-size: 2rem; /* Mindre rubrik */
+}
+
+.home-content p {
+    font-size: 1rem; /* Standard textstorlek */
+    line-height: 1.6; /* Radavstånd för bättre läsbarhet */
+}
+
+/* För knappen 'Hire Me' */
+.home-content .hire-btn {
+    margin-top: 20px; /* Ge knappen lite utrymme */
+    padding: 15px 30px; /* Större knapp */
+    font-size: 1rem;
+    background-color: #043f2c; /* Orange bakgrund */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.home-content .hire-btn:hover {
+    background-color: #043f2c /* Mörkare orange när man hovrar */
+}
+/* Typing-effekt */
+.typing-text {
+    font-size: 1.5em;
+    color: #007600;
+    margin-top: 10px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: bottom; /* Ser till att texten ligger i samma rad som "I'm a" */
+    border-right: 2px solid #043f2c;
+    animation: typing 3s steps(20, end) forwards, blink 0.5s step-end 3s; /* Blinkar i 3s och försvinner */
+}
+
+/* Animering för att skriva texten */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 20ch; }
+}
+
+/* Markör blinkar under skrivning men försvinner när texten är klar */
+@keyframes blink-caret {
+    0%, 50% { border-color: #043f2c; }
+    100% { border-color: transparent; }
+}
+
+.home-content p {
+    margin: 20px 0;
+    line-height: 1.6;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #529e5a;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #007600; /* Ljus röd-orange */
+    transform: scale(1.05);
+}
+
+.social-icons {
+    margin-bottom: 20px; /* Justera här för att styra avståndet */
+}
+
+.social-icons a {
+    color: #007600;
+    font-size: 2em; /* Ändra storleken på ikonerna */
+    margin-right: 20px; /* Öka avståndet mellan ikonerna */
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #043f2c;
+    transform: scale(1.2);
+}
+
+.home-content .btn {
+    margin-top: 10px; /* Justera här för att styra avståndet ovanför knappen */
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    .home {
+        padding: 40px 5%; /* Justerat padding för mindre skärmar */
+    }
+    
+    .home-img img {
+        width: 200px; /* Minska bildstorleken */
+        margin-bottom: 20px;
+    }
+    
+    header {
+        flex-direction: column;
+    }
+    
+    header nav {
+        margin-top: 10px;
+    }
+}
+
+/* Mejla och bjud in andra enheter för respons */
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 2em; /* Minska storleken på rubriken */
+    }
+
+    .btn {
+        padding: 10px 20px; /* Justera knappens storlek */
+    }
+}
+.project-grid {
+    display: flex;
+    justify-content: space-around; /* Dela upp projekten jämnt */
+    flex-wrap: wrap; /* Tillåta wrap vid små skärmar */
+    margin-top: 20px; /* Avstånd ovanför projektbilderna */
+}
+
+.project {
+    text-align: center; /* Centrera texten under bilden */
+    margin: 10px; /* Avstånd mellan projekten */
+    flex-basis: calc(30% - 20px); /* Låt varje projekt ta upp 30% av raden, minus marginal */
+    transition: transform 0.3s ease; /* Gör övergången smidig */
+}
+
+.project img {
+    width: 100%; /* Gör bilden responsiv */
+    border-radius: 10px; /* Rundade hörn för bilderna */
+}
+.project h3 {
+    font-family: 'Faculty Glyphic', cursive; /* Samma typsnitt som tidigare */
+    margin-top: 10px; /* Avstånd mellan bild och rubrik */
+}
+/* Lägga till en hover-effekt */
+.project:hover {
+    transform: scale(1.05); /* Låt projektet zooma in något vid hover */
+}
+
+/* Focus styles for better accessibility */
+*:focus {
+    outline: 2px solid #529e5a;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px 5%; /* Justera padding för footer */
+    background-color: #529e5a; /* Rosa footer */
+    color: #ffffff;
+    margin-top: 60px; /* För att separera från innehållet */
+}
+
+/* Scrollbar styling för Webkit-baserade webbläsare (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 16px; /* Bredd på scrollbarens grepp */
+    background-color: #043f2c; /* Färg på scrollbarens spår */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #529e5a; /* Färg på scrollbarens grepp */
+    border-radius: 15px; /* Rundade hörn */
+    border: 15px solid transparent; /* Ger en bubbligare känsla */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #529e5a; /* Mörkare färg när man hovrar */
+}
+
+/* Scrollbar styling för Firefox */
+html {
+    scrollbar-width: auto; /* Gör scrollbaren mer generös */
+    scrollbar-color: #529e5a #f1f1f1; /* Greppfärg och spårfärg */
+}
+
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Faculty+Glyphic&family=Quicksand:wght@300..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css.test1.css"> <!-- Kontrollera att detta är rätt sökväg -->
+        <title>Mönsterkollektion</title>
+    </head>
+    <body>
+    <style>
+        body {
+            font-family: 'Faculty Glyphic', cursive;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            padding: 100px 20px; /* Space for header */
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Faculty Glyphic', cursive;
+            margin-bottom: 20px;
+        }
+        .header-image {
+    width: 100%; /* Gör bilden full bredd */
+    height: 50px; /* Sätt höjd till 50% av viewportens höjd */
+    min-height: 324px; /* Sätt minimihöjd till bildens höjd */
+    object-fit: cover; /* Bevara bildens proportioner utan att sträcka den */
+    border-radius: 20px; /* Rundade hörn */
+    margin-bottom: 20px; /* Utrymme under bilden */
+}
+
+        .image-text-container {
+            display: flex;
+            align-items: center; /* Align items vertically */
+            justify-content: center; /* Center content horizontally */
+            gap: 20px; /* Space between image and text */
+            margin-bottom: 40px; /* Space below the image-text section */
+        }
+
+        img {
+            max-width: 300px; /* Set a fixed width for the image */
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .text-container {
+            max-width: 600px; /* Limit paragraph width */
+            text-align: left; /* Align text to the left */
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        #mönsterkollektion {
+            padding: 60px 10%;
+            background-color: #ffdcf8;
+            text-align: center;
+        }
+
+        .mönsterkollektion-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .mönsterkollektion-item {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33% - 40px);
+            max-width: calc(33% - 40px);
+            text-align: center;
+            transition: transform 0.2s; /* Smooth transition on hover */
+        }
+
+        .mönsterkollektion-item:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+
+        .mönsterkollektion-item i {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .mönsterkollektion-item h3 {
+            font-family: 'Faculty Glyphic', cursive;
+            margin-bottom: 10px;
+            color: #ff6f61; /* Change color of the heading */
+        }
+
+        .mönsterkollektion-item p {
+            font-family: 'Faculty Glyphic', cursive;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f8f8f8;
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
+            color: #333;
+        }
+    </style>
+</head>
+
+
+<div class="container">
+    <h1>MÖNSTERKOLLEKTION ’’HAVSSYMFONI’’</h1>
+    <img src="New/Tapet.jpg" alt="Header Image" class="header-image">
+    <div class="image-text-container">
+        <img src="c:\Users\iidaa\Downloads\fiskbilden.JPG" alt="Mönster">
+        <div class="text-container">
+                    <p>Här kan du beskriva projektet mer detaljerat. Följ med om designprocessen, de verktyg du använde, och vad du lärde dig genom att skapa detta projekt. Du kan också prata om målgruppen och hur designen möter deras behov.</p>
+                    <a href="index">Tillbaka till hem</a> <!-- Link back to the homepage -->
+                </div>
+            </div>
+        </div>
+
+
+    <section id="Mönsterkollektion">
+        <div class="mönsterkollektion-container">
+            <div class="mönsterkollektion-item">
+                <i class="fa-solid fa-leaf"></i>
+                <h3>Inspiration och idéer</h3>
+                <p>Hämtat inspiration från vattnet. Ville visualisera alger och fiskar.</p>
+            </div>
+            <div class="mönsterkollektion-item">
+                <i class="fa-solid fa-book"></i>
+                <h3>Lärdomar och utveckling</h3>
+                <p>Lärt mig att kombinera digitala och traditionella tekniker.</p>
+            </div>
+            <div class="mönsterkollektion-item">
+                <i class="fa-solid fa-paint-brush"></i>
+                <h3>Verktyg och tekniker</h3>
+                <p>Blyerts, fineliner, Procreate och Photoshop</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Ida Andersson. Alla rättigheter förbehållna.</p>
+    </footer>
+    

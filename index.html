@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css.test1.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
+    
+    <title>Portfolio Website</title>
+    <style>
+         h1, h2, h3 {
+            text-align: center; /* Centrera alla rubriker */
+        }
+
+        section h2, section h3 {
+            text-align: center; /* Centrera rubriker i alla sektioner */
+        }
+
+        .skills h3, .education h3, .experiences h3 {
+            text-align: center; /* Centrera rubriker i specifika sektioner */
+        }
+        body {
+            font-family: 'Faculty Glyphic', cursive;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Scrollbar styling for Webkit-based browsers (Chrome, Safari) */
+        ::-webkit-scrollbar {
+            width: 12px;
+            background-color: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Scrollbar styling for Firefox */
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: #f1f1f1 #f1f1f1;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #000000;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(80, 33, 33, 0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Faculty Glyphic', cursive;
+            font-size: 2.5em;
+        }
+
+        nav a {
+            font-family: 'Faculty Glyphic', cursive;
+            font-size: 1em;
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffdcf8; /* Färgen vid hover kan justeras */
+        }
+
+        /* Section styling */
+        section {
+            padding: 100px 20px; /* Utrymme så att innehållet inte göms bakom headern */
+            min-height: 70vh; /* Varje sektion tar upp hela höjden på vyn */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            background-color: #ffdcf8; /* Enhetlig bakgrundsfärg för alla sektioner */
+        }
+
+        .home-content {
+            max-width: 600px; /* Maxbredd för innehållet */
+        }
+
+        .home-img img {
+            max-width: 100%; /* Förhindra att bilden går utanför sin behållare */
+            height: auto;
+            margin-right: 20px; /* Marginal som ger avstånd mellan bild och text */
+        }
+
+        .home-content h1, .home-content h3 {
+            font-family: 'Faculty Glyphic', cursive;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f8f8f8;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Ida</a>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#skills & Education">Skills & Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="home-img">
+            <img src="c:/Users/iidaa/Downloads/Skiss.png" alt="Illustration">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Ida</span></h1>
+            <h3 class="typing-text">I'm a <span> Digital Designer </span></h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse. Odit similique doloribus tenetur doloremque, sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque asperiores ea.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#" class="btn">Hire me</a>
+        </div>
+    </section>
+    <section id="skills-education-experiences">
+        <h2>Skills, Education & Experiences</h2>
+        <div class="skills-education-container">
+            <div class="skills">
+                <h3>Skills</h3>
+                <p>Figma</p>
+                <p>Illustrator</p>
+                <p>Procreate</p>
+            </div>
+            <div class="education">
+                <h3>Education</h3>
+                <p>Art College Inredning och Design.</p>
+                <p>Digital Design Yrgo 2024-2026.</p>
+            </div>
+            <div class="experiences">
+                <h3>Experiences</h3>
+                <p>Här är dina erfarenheter...</p>
+            </div>
+        </div>
+    </section>
+ <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <a href="file:///C:/Users/iidaa/OneDrive/Dokument/index.html/projekt1.html" class="project">
+                <img src="c:\Users\iidaa\Downloads\pillowcase mockup mönster.jpg" alt="Mönsterkollektion">
+                <h3>Mönsterkollektion</h3>
+            </a>
+            <a href="projekt2.html" class="project">
+                <img src="c:/Users/iidaa/Pictures/Screenshots/Screenshot 2024-11-02 185229.png" alt="Projekt Puls">
+                <h3>GreenSpendr</h3>
+            </a>
+            <a href="projekt3.html" class="project">
+                <img src="c:/Users/iidaa/Pictures/Screenshots/Screenshot 2024-11-03 151046.png" alt="Kokbok Moules Frites">
+                <h3>Kokbok Moules Frites</h3>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Här kan besökare kontakta dig.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ida Andersson. Alla rättigheter förbehållna.</p>
+    </footer>
+</body>
+
+</html>
